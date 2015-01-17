@@ -1,0 +1,26 @@
+{
+  "name": "ivashkad",
+  "description": "Ethernet Ivashka chat server",
+  "version": "1.0.0",
+  "dependencies": {
+    "colors": "^1.0.3"
+  },
+  "bin": {
+    "ivashkad": "./index.js"
+  },
+  "keywords": [
+    "cli",
+    "chat",
+    "ethernet",
+    "server"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yursha/ivashkad.git"
+  },
+  "bugs": {
+    "url": "http://github.com/yursha/ivashkad/issues"
+  },
+  "author": "Alex Yursha",
+  "license": "ISC"
+}
