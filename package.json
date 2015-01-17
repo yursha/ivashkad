@@ -3,7 +3,8 @@
   "description": "Ethernet Ivashka chat server",
   "version": "1.0.2",
   "dependencies": {
-    "colors": "^1.0.3"
+    "colors": "^1.0.3",
+    "ip": "^0.3.2"
   },
   "bin": {
     "ivashkad": "./index.js"

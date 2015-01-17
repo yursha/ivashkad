@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 
 var net = require('net');
+var ip = require('ip');
+var colors = require('colors');
 
 /*
  * Port to listen on.
@@ -40,7 +42,7 @@ var server = net.createServer(function (conn) {
           text: nickname + ' joined the room'
         };
         broadcast(message, conn);
-        console.log('\033[90m > ' + nickname + ' joined the room\033[39m');
+        console.log(colors.grey(' > ' + nickname + ' joined the room'));
       }
     } else {
 
@@ -61,7 +63,7 @@ var server = net.createServer(function (conn) {
       text: nickname + ' left the room'
     };
     broadcast(message);
-    console.log('\033[90m > ' + nickname + ' left the room\033[39m');
+    console.log(colors.grey(' > ' + nickname + ' left the room'));
   });
 
   unicast({
@@ -87,10 +89,6 @@ function unicast(msg, user) {
 
 
 server.listen(port, function () {
-  console.log('\033[96m    server listening on *:' + port + '\033[39m');
+  console.log(colors.cyan('\tserver listening on *:' + port));
+  console.log(colors.cyan('\tlocal network ip ' + ip.address()));
 });
-
-// TODO: let it be killed with C-c
-//server.on('SIGINT', function () {
-//  process.exit(0);
-//})
