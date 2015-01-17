@@ -9,4 +9,4 @@ Ethernet command-line chat server. Designed to work with [ivashka](https://githu
 
 `ivashkad`
 
-Listens on port 6666 which is the standard port for *ivashka* server.
+Listens on port 6666 which is the standard port for **ivashka** server.
