@@ -1,7 +1,7 @@
 {
   "name": "ivashkad",
   "description": "Ethernet Ivashka chat server",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "dependencies": {
     "colors": "^1.0.3"
   },
