@@ -3,10 +3,10 @@ Ethernet command-line chat server. Designed to work with [ivashka](https://githu
 
 # Installation
 
-`npm install -g ivashkad`
+`$ npm install -g ivashkad`
 
 # Usage
 
-`ivashkad`
+`$ ivashkad`
 
 Listens on port 6666 which is the standard port for **ivashka** server.

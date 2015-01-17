@@ -3,7 +3,7 @@
 var net = require('net');
 
 /*
- * Port to listen to.
+ * Port to listen on.
  */
 var port = 6666;
 
